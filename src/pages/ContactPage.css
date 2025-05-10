@@ -1,0 +1,83 @@
+/* src/pages/ContactPage.css */
+/* .contact-page {
+  page-container styles apply 
+} */
+
+.contact-hero {
+  text-align: center;
+  padding: 20px 0 30px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+}
+.contact-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.contact-hero p {
+  font-size: 1.1rem;
+  color: var(--muted-text);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact-content-wrapper {
+  display: flex;
+  flex-wrap: wrap; /* Allow sections to wrap on smaller screens */
+  gap: 40px; /* Space between info and form sections */
+}
+
+.contact-info-section, .contact-form-section {
+  flex: 1; /* Allow them to share space */
+  min-width: 300px; /* Minimum width before wrapping */
+}
+
+.contact-info-section h3, .contact-form-section h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.contact-info-section p {
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #444;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+}
+.contact-details li {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+.contact-details strong {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--dark-text);
+}
+.contact-details a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+.contact-details a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Form specific styles */
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+/* Global input/textarea styles from index.css are used */
+
+.submit-contact-button {
+  background-color: var(--success-color);
+  color: white;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+}
+.submit-contact-button:hover {
+  background-color: #157347; /* Darker green */
+}

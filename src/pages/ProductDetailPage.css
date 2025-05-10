@@ -1,0 +1,153 @@
+.product-detail-container {
+    /* page-container class from index.css handles general padding */
+    animation: fadeIn 0.5s ease-out; /* Simple fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .back-button {
+    margin-bottom: 25px;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+  .back-button:hover {
+    background-color: #5a6268;
+  }
+  
+  .product-detail-container h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #343a40;
+  }
+  
+  .product-layout {
+      display: flex;
+      flex-wrap: wrap; /* Allow wrapping on smaller screens */
+      gap: 30px; /* Space between image and info */
+      margin-bottom: 30px;
+  }
+  
+  .product-image-section {
+      flex: 1 1 300px; /* Grow, shrink, base width */
+      max-width: 450px; /* Limit image size */
+  }
+  .product-image-large {
+    width: 100%;
+    height: auto;
+    max-height: 450px; /* Control max height */
+    object-fit: contain; /* Ensure whole image is visible */
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  }
+  
+  .product-info-section {
+      flex: 1 1 350px; /* Grow, shrink, base width */
+  }
+  .product-description {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #495057;
+    margin-bottom: 15px;
+  }
+  .product-info-section p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  .product-info-section strong {
+      color: #212529;
+  }
+  
+  .bid-form {
+    margin-top: 25px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 25px;
+    background-color: #f8f9fa; /* Light background for form area */
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .bid-form h4 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+  }
+  .bid-form .form-group {
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Space between label, input, button */
+  }
+  .bid-form label {
+    margin-right: 10px;
+    font-weight: 500;
+  }
+  .bid-form input[type="number"] {
+    width: 120px; /* Specific width for bid input */
+    margin-bottom: 0; /* Override global */
+  }
+  .place-bid-button {
+    background-color: #ff8c00; /* Orange for bid button */
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    font-weight: 500;
+  }
+  .place-bid-button:hover {
+      background-color: #e07b00;
+  }
+  
+  .login-prompt {
+      margin-top: 20px;
+      color: #dc3545; /* Red for login prompt */
+      font-size: 0.95rem;
+  }
+  .login-link-inline {
+      background: none;
+      border: none;
+      color: #007bff;
+      padding: 0;
+      font-size: 0.95rem;
+      text-decoration: underline;
+  }
+  .auction-ended-message {
+      margin-top: 20px;
+      color: #dc3545;
+      font-weight: bold;
+      font-size: 1.1rem;
+      padding: 10px;
+      background-color: #f8d7da;
+      border: 1px solid #f5c6cb;
+      border-radius: 4px;
+      text-align: center;
+  }
+  
+  
+  .bidding-history-section {
+      margin-top: 30px;
+      border-top: 1px solid #e9ecef;
+      padding-top: 20px;
+  }
+  .bidding-history-section h4 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+  }
+  .bidding-history-section ul {
+      list-style: none;
+      padding: 0;
+  }
+  .bidding-history-section li {
+      padding: 8px 0;
+      border-bottom: 1px dashed #f1f1f1;
+      font-size: 0.9rem;
+      color: #555;
+  }
+  .bidding-history-section li:last-child {
+      border-bottom: none;
+  }
+  

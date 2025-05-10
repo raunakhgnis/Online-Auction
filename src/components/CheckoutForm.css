@@ -1,0 +1,48 @@
+/* src/components/CheckoutForm.css */
+.payment-form {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--light-bg);
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--dark-text);
+}
+
+.card-element {
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: white;
+  margin-bottom: 20px;
+}
+/* You can add more specific styling for the CardElement if needed,
+   following Stripe's documentation for element appearance. */
+
+.pay-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: var(--success-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+}
+.pay-button:disabled {
+  background-color: #a3cfbb; /* Lighter green when disabled */
+}
+.pay-button:hover:not(:disabled) {
+  background-color: #157347; /* Darker green on hover */
+}
+
+.card-errors, .payment-success {
+  margin-top: 15px;
+}

@@ -1,0 +1,30 @@
+/* src/pages/BidPaymentPage.css */
+.bid-payment-page {
+    max-width: 600px; /* Narrower for a focused payment form */
+    text-align: center;
+}
+
+.bid-payment-page h2 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+.bid-payment-page p {
+    margin-bottom: 20px;
+    font-size: 1rem;
+    color: var(--muted-text);
+}
+
+.bid-payment-page strong {
+    color: var(--dark-text);
+}
+
+.cancel-payment-button {
+    margin-top: 25px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+}
+.cancel-payment-button:hover {
+    background-color: #545b62;
+}

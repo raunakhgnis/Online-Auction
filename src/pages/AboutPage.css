@@ -1,0 +1,92 @@
+/* src/pages/AboutPage.css */
+/* .about-page {
+  /* page-container styles from index.css apply */
+/* } */ 
+
+.about-hero {
+  text-align: center;
+  padding: 30px 0 40px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 40px;
+}
+.about-hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 15px;
+}
+.about-hero .lead-text {
+  font-size: 1.15rem;
+  color: var(--muted-text);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.our-story-section, .team-section {
+  margin-bottom: 40px;
+}
+.our-story-section h2, .team-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block; /* Border only under text */
+}
+.our-story-section p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.team-member-card {
+  background-color: #fdfdfd; /* Slightly off-white */
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.team-member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+}
+
+.team-member-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 25%; /* Circular image */
+  object-fit: cover;
+  margin: 0 auto 20px auto;
+  border: 3px solid var(--light-bg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.team-member-card h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--dark-text);
+}
+.team-member-card h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+.team-member-card p {
+  font-size: 0.9rem;
+  color: var(--muted-text);
+  line-height: 1.6;
+}

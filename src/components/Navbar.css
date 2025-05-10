@@ -1,0 +1,125 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes brand to left, links to right by default */
+    align-items: center;
+    padding: 0.75rem 1.5rem; /* Adjusted padding slightly */
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border-color, #dee2e6);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05); /* Slightly more pronounced shadow */
+    height: 60px; /* Example: Fixed navbar height */
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center; /* Vertically align logo and text */
+    gap: 0.75rem; /* Space between logo and text */
+    text-decoration: none; /* Remove underline from Link */
+    /* If you want the brand to be truly centered when there's space,
+       you might need a different approach if .nav-links is also present.
+       One way is to make .navbar a grid or use absolute positioning for brand,
+       but space-between is standard for logo left, links right.
+       If .nav-links were not present or hidden on mobile, then
+       .navbar { justify-content: center; } would center the brand.
+       For now, this centers items *within* the brand link.
+    */
+}
+.navbar-brand:hover {
+    opacity: 0.85; /* Slight hover effect on the entire brand area */
+}
+
+.navbar-logo {
+    height: 40px; /* Set a desired height for your logo */
+    width: auto;  /* Let width adjust to maintain aspect ratio initially */
+    max-width: 160px; /* Max width for a very wide logo, adjust as needed if your logo is e.g. 4:1 */
+                     /* For a 2:1 aspect ratio with height 40px, width would be 80px */
+                     /* If you want to force a 2:1 aspect ratio (e.g. logo is 80px wide for 40px height): */
+                     /* width: 80px; */
+    object-fit: contain; /* Ensures the whole logo is visible without cropping or stretching */
+    border-radius: 4px;  /* Add a subtle corner radius */
+    display: block; /* Removes any extra space below the image */
+}
+
+.navbar-brand span {
+    font-size: 1.3rem; /* Adjust text size if needed */
+    font-weight: 600;
+    color: var(--dark-text, #212529);
+    white-space: nowrap; /* Prevent "Online Auction" from wrapping */
+}
+/* .navbar-brand:hover span { - Hover effect is now on the parent .navbar-brand
+    color: var(--primary-color, #0d6efd);
+} */
+
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    gap: 1.2rem; /* Spacing between nav items */
+}
+
+.nav-links li {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--muted-text, #6c757d);
+    font-size: 0.95rem;
+    padding: 0.4rem 0.2rem;
+    font-weight: 500;
+    border: none;
+    background: none;
+    border-bottom: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.nav-link:hover {
+    color: var(--primary-color, #0d6efd);
+    text-decoration: none;
+}
+.nav-link.active-nav {
+    font-weight: 700;
+    color: var(--primary-color, #0d6efd);
+    border-bottom-color: var(--primary-color, #0d6efd);
+}
+
+.nav-welcome {
+    color: var(--dark-text, #212529);
+    font-size: 0.9rem;
+    padding: 0.4rem 0.2rem;
+    white-space: nowrap;
+}
+
+.nav-button-logout {
+    display: inline-block;
+    visibility: visible;
+    opacity: 1;
+    background-color: var(--danger-color, #dc3545);
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: var(--border-radius, 0.375rem);
+    font-size: 0.9rem;
+    border: none;
+    line-height: normal;
+    white-space: nowrap;
+}
+.nav-button-logout:hover {
+    background-color: #bb2d3b;
+}
+
+/* Fallbacks for CSS variables if not defined in :root in index.css */
+:root {
+  --primary-color: #0d6efd;
+  --danger-color: #dc3545;
+  --dark-text: #212529;
+  --muted-text: #6c757d;
+  --border-color: #dee2e6;
+  --border-radius: 0.375rem;
+}

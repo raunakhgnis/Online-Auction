@@ -1,0 +1,32 @@
+.payment-form {
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.card-element {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  background: white;
+}
+
+button {
+  background-color: #6772e5;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 14px;
+}
